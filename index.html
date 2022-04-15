@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating a webpage layout using CSS FLEXBOX </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            color: aliceblue;
+            height: 15vh;
+            width: 100vw;
+        }
+        .container{
+            display: flex;
+            height: 15vh;
+            width: 100vw;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header nav ul li{
+            list-style: none;
+        }
+        footer{
+            background: black;
+            color: bisque;
+            height: 12vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-size: 20px;
+        }
+        main{
+            height: 73vh;
+            width: 100vw;
+            display: flex;
+        }
+        .box1{
+            height: 73vh;
+            width: 50vw;
+            background-color: aqua;
+        }
+        .box2{
+            height: 73vh;
+            width: 50vw;
+            background-color: rgb(255, 0, 230);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box1"></div><div class="box2"></div>
+        
+    </main>
+    <footer>
+        <p>copyright owner Aman_Raj &copy;</p>
+    </footer>
+</body>
+</html>
